@@ -20,13 +20,78 @@
     />
   </head>
   <body>
+         <div class="burger-menu is-open" data-burger>
+           <button class="burger-close-button" type="button" data-burger-close>
+          <svg class="burger-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="burger-menu-wrapper"><nav class="nav-group-burger">
+          <ul class="nav-list">
+            <li class="nav-items">
+              <a class="nav-link current" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-items"><a class="nav-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="burger-address">
+          <ul class="burger-address-list">
+            <li class="burger-address-items">
+              <a class="burger-address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="burger-address-items">
+              <a class="burger-address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+
+          <ul class="socials-burger-list">
+            <li class="socials-burger-item">
+              <a href="" class="socials-burger-link">
+                <svg class="socials-burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-burger-item">
+              <a href="" class="socials-burger-link">
+                <svg class="socials-burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-burger-item">
+              <a href="" class="socials-burger-link">
+                <svg class="socials-burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials-burger-item">
+              <a href="" class="socials-burger-link">
+                <svg class="socials-burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+            
+          </div>
+
     <header class="header">
-      <div class="container header-wrapper">
-        <nav class="nav-group">
+      <div class="container">        
           <a href="./index.html" class="logo-header"
             >Web<span class="logo-dark">Studio</span></a
           >
-
+          <nav class="nav-group">
           <ul class="nav-list">
             <li class="nav-items">
               <a class="nav-link-current" href="./index.html">Studio</a>
@@ -51,8 +116,17 @@
             </li>
           </ul>
         </address>
+        <button class="burger-button" type="button" data-burger-open>
+          <svg class="burger-icon"
+          width="24" height="24">
+          <use href="./images/icons.svg#burger-button-icon"></use>
+        </svg>
+        </button>       
       </div>
+      
     </header>
+    
+       
     <main>
       <section class="hero-section">
         <div class="container hero-wrapper">
@@ -128,8 +202,8 @@
               <img
                 src="./images/team-image/guerrero.jpg"
                 alt="Mark Guerrero product designer"
-                width="264"
-                height="260"
+                width="268px"
+                height="260px"
                 class="team-icon"
               />
               <div class="team-member-wrapper">
@@ -171,8 +245,8 @@
               <img
                 src="./images/team-image/ford.jpg"
                 alt="Tom Ford frontend developer"
-                width="264"
-                height="260"
+                width="268px"
+                height="260px"
                 class="team-icon"
               />
               <div class="team-member-wrapper">
@@ -214,8 +288,8 @@
               <img
                 src="./images/team-image/garcia.jpg"
                 alt="Camila Garcia marketing manager"
-                width="264"
-                height="260"
+                width="268px"
+                height="260px"
                 class="team-icon"
               />
               <div class="team-member-wrapper">
@@ -257,8 +331,8 @@
               <img
                 src="./images/team-image/wilson.jpg"
                 alt="Daniel Wilson UI designer"
-                width="264"
-                height="260"
+                width="268px"
+                height="260px"
                 class="team-icon"
               />
               <div class="team-member-wrapper">
@@ -433,7 +507,7 @@
       </section>
     </main>
     <footer class="footer-section">
-      <div class="container footer-wrapper">
+      <div class="container">
         <div class="logo-footer-group">
           <a class="logo-footer" href="./index.html"
             >Web<span class="logo-light">Studio</span></a
@@ -600,6 +674,8 @@
       </div>
     </div>
 
+  
+    <script src="./js/burger-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
