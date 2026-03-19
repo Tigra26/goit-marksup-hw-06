@@ -1,0 +1,103 @@
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 320px) {
+  .hero-section {
+     background-color: #2e2f42;
+      background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+    width: 320px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    background-image:
+      url(../images/hero-image/Dark-bg@1x.png),
+      url(../images/hero-image/people-office-mb@1x.jpg);
+
+    @media screen and (min-width: 320px) and (min-resolution: 192dpi) {
+      background-image:
+        url(../images/hero-image/Dark-bg@2x.png),
+        url(../images/hero-image/people-office-mb@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 216px;
+    margin-bottom: 72px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    width: 768px;
+    padding-top: 112px;
+    padding-bottom: 112px;
+    background-image:
+      url(../images/hero-image/Dark-bg@1x.png),
+      url(../images/hero-image/people-office-tab@1x.jpg);
+
+    @media screen and (min-width: 1157px) and (min-resolution: 192dpi) {
+      background-image:
+        url(../images/hero-image/Dark-bg@2x.png),
+        url(../images/hero-image/people-office-tab@2x.jpg);
+    }
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 496px;
+    margin-bottom: 36px;
+    color: #ffffff;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+    .hero-section {
+      width: 1280px;
+  background-image:
+    url(../images/hero-image/Dark-bg@1x.png),
+    url(../images/hero-image/people-office-desk@1x.jpg);
+  padding-top: 188px;
+  padding-bottom: 188px;
+  @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    background-image:
+      url(../images/hero-image/Dark-bg@2x.png),
+      url(../images/hero-image/people-office-desc@2x.jpg);
+  }
+}
+}
+
+.hero-button {
+  font-weight: 500;
+  line-height: 1.17;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  min-width: 169px;
+  height: 56px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}

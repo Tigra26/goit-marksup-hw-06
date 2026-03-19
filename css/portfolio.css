@@ -1,0 +1,118 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .portfolio-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-items:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.portfolio-items { 
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .portfolio-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  
+  .portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+}
+
+.portfolio-items {
+  flex-basis: calc((100% - 24px) / 2);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+  
+}
+
+@media screen and (min-width: 1158px) {
+
+    .portfolio-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .portfolio-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfolio-items {
+   flex-basis: calc((100% - (24px * 2)) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: #2e2f42;
+}
+
+
+.portfolio-items:hover {
+  cursor: pointer;
+  box-shadow:
+    0 1px 6px rgba(46, 47, 66, 0.08),
+    0 1px 1px rgba(46, 47, 66, 0.16),
+    0 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: #2e2f42;
+}
+
+.portfolio-item-wrapper {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 32px;
+  color: #f4f4fd;
+  background-color: #4d5ae5;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-items:hover .portfolio-overlay-text,
+.portfolio-items:focus .portfolio-overlay-text {
+  transform: translateY(0);
+}
